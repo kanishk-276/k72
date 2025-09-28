@@ -40,3 +40,18 @@ html{
         transform: translateX(-100%);
     }
 }
+@keyframes draw-path {
+    0% {
+        stroke-dashoffset: 1700; 
+    }
+    100% {
+        stroke-dashoffset: -10;   
+    }
+}
+
+.oval-path {
+    stroke-dasharray: 1700;
+    animation: draw-path 1s alternate-reverse infinite; 
+    fill: none;
+    stroke-width: 1px;
+}

@@ -18,8 +18,7 @@ const NavContext = ({ children }) => {
             setNavColor('white')
         }
     },[locate])
-    
-
+                                
     return (
         <div>
             <NavbarContext.Provider value={[navOpen, setNavOpen]}>
